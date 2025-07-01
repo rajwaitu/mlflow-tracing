@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/243290265298542037/340a0fcb514f43cfaae47d9ae9057884/artifacts
+deleted_time: 1751090275209
+end_time: 1751042090394
+entry_point_name: ''
+experiment_id: '243290265298542037'
+lifecycle_stage: deleted
+run_id: 340a0fcb514f43cfaae47d9ae9057884
+run_name: wistful-wolf-86
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751042079972
+status: 3
+tags: []
+user_id: rajwa

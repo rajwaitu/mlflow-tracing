@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/247844315413025522/42446713f46943f68d2cefbfb37e84f0/artifacts
+deleted_time: 1751107997268
+end_time: 1751106535479
+entry_point_name: ''
+experiment_id: '247844315413025522'
+lifecycle_stage: deleted
+run_id: 42446713f46943f68d2cefbfb37e84f0
+run_name: flawless-bee-302
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751106499245
+status: 3
+tags: []
+user_id: rajwa

@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/243290265298542037
+creation_time: 1751041460471
+experiment_id: '243290265298542037'
+last_update_time: 1751041460471
+lifecycle_stage: active
+name: langchain-experiment

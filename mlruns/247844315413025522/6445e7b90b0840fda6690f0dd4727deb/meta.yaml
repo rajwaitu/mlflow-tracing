@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/247844315413025522/6445e7b90b0840fda6690f0dd4727deb/artifacts
+deleted_time: 1751107997266
+end_time: 1751104153235
+entry_point_name: ''
+experiment_id: '247844315413025522'
+lifecycle_stage: deleted
+run_id: 6445e7b90b0840fda6690f0dd4727deb
+run_name: dazzling-donkey-99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751104128943
+status: 3
+tags: []
+user_id: rajwa

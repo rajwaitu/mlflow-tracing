@@ -3,9 +3,10 @@ import time
 from dotenv import load_dotenv
 import os
 
-from langchain.chains import LLMChain
-from langchain.prompts import PromptTemplate
-from langchain_openai import OpenAI
+from langchain_openai import ChatOpenAI
+from langchain.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+
 
 load_dotenv()
 
@@ -36,15 +37,11 @@ def log_langchain_model():
     Log a LangChain model to MLflow.
     """
     print("Loading OpenAI model...")
-    llm = OpenAI(temperature=0.1, max_tokens=1000,  model="gpt-3.5-turbo",api_key=os.getenv("OPENAI_API_KEY"))
-
-    prompt = PromptTemplate(
-    input_variables=["recipe", "customer_count"],
-    template=template_instruction,
-    )
+    llm = ChatOpenAI(model="gpt-3.5-turbo",temperature=0.1, max_tokens=1000,api_key=os.getenv("OPENAI_API_KEY"))
+    prompt = ChatPromptTemplate.from_template(template_instruction)
 
     print("Creating LLMChain...")
-    chain = LLMChain(llm=llm, prompt=prompt)
+    chain = prompt | llm | StrOutputParser()
 
     print("Logging LangChain model to MLflow...")
     with mlflow.start_run():
@@ -53,21 +50,20 @@ def log_langchain_model():
         print(f"Model logged with model uri: {model_info.model_uri}")
         return model_info
 
-def load_langchain_model(model_uri):
+def load_langchain_model_and_invoke(model_uri,recipe, customer_count):
     """
     Load a LangChain model from MLflow.
     """
     print("Loading LangChain model from MLflow...")
     loaded_chain = mlflow.langchain.load_model(model_uri)
     print("Model loaded successfully.")
-    return loaded_chain
+    print("calling invoke on model.")
+    response_text = loaded_chain.invoke({"recipe": recipe, "customer_count": customer_count})
+    print(response_text)
 
 
 if __name__ == "__main__":
     #model_info = log_langchain_model()
-    run_id = "d6020bed528f438bbc644a4926eb7cb9"
-    artifact_path = "model"
-    model_uri = f"runs:/{run_id}/{artifact_path}"
-    loaded_model = load_langchain_model("models:/m-3fad371cc25f4eea83aacedaf8b3587c")
-    #dish1 = loaded_model.predict({"recipe": "chicken curry", "customer_count": "4"})
-    #print(dish1[0])
+
+    load_langchain_model_and_invoke("models:/m-bee45dbcd7f54c109a8ec8556e755446", "chicken curry", "4")
+

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/243290265298542037/541ec273d6c14399ac01533440b7f533/artifacts
+end_time: 1751090627278
+entry_point_name: ''
+experiment_id: '243290265298542037'
+lifecycle_stage: active
+run_id: 541ec273d6c14399ac01533440b7f533
+run_name: nebulous-steed-775
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751090609086
+status: 3
+tags: []
+user_id: rajwa

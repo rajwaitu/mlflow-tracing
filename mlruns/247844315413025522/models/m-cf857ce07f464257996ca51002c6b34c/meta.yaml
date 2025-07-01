@@ -1,0 +1,11 @@
+artifact_location: mlflow-artifacts:/247844315413025522/models/m-cf857ce07f464257996ca51002c6b34c/artifacts
+creation_timestamp: 1751106499385
+experiment_id: '247844315413025522'
+last_updated_timestamp: 1751106535246
+lifecycle_stage: deleted
+model_id: m-cf857ce07f464257996ca51002c6b34c
+model_type: ''
+name: hotel_mgmt_rag_model
+source_run_id: 42446713f46943f68d2cefbfb37e84f0
+status: 2
+status_message: null

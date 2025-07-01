@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/247844315413025522/30f880ff04d74e94967962277917a255/artifacts
+deleted_time: 1751107997264
+end_time: 1751099608106
+entry_point_name: ''
+experiment_id: '247844315413025522'
+lifecycle_stage: deleted
+run_id: 30f880ff04d74e94967962277917a255
+run_name: redolent-shrimp-876
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751099606384
+status: 4
+tags: []
+user_id: rajwa

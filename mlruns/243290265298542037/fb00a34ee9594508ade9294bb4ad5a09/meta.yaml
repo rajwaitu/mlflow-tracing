@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/243290265298542037/fb00a34ee9594508ade9294bb4ad5a09/artifacts
+deleted_time: 1751090275213
+end_time: 1751081077025
+entry_point_name: ''
+experiment_id: '243290265298542037'
+lifecycle_stage: deleted
+run_id: fb00a34ee9594508ade9294bb4ad5a09
+run_name: unique-auk-928
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751081068203
+status: 3
+tags: []
+user_id: rajwa

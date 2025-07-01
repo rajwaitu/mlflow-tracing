@@ -1,8 +1,12 @@
-openai
+
 mlflow>=3.1
 python-dotenv
 
-tiktoken==0.6.0
-langchain==0.1.16
-langchain-openai==0.0.8
-langchain-community==0.0.33
+tiktoken
+langchain
+langchain-openai
+langchain-community
+
+langchain-pinecone
+pinecone
+sentence-transformers

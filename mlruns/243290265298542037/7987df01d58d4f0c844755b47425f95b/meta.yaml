@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/243290265298542037/7987df01d58d4f0c844755b47425f95b/artifacts
+end_time: 1751090947028
+entry_point_name: ''
+experiment_id: '243290265298542037'
+lifecycle_stage: active
+run_id: 7987df01d58d4f0c844755b47425f95b
+run_name: useful-deer-183
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751090936205
+status: 3
+tags: []
+user_id: rajwa
